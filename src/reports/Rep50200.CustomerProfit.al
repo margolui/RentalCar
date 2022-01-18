@@ -3,6 +3,8 @@ report 50200 "Customer Profit"
     ApplicationArea = All;
     Caption = 'Customer Profit test';
     UsageCategory = ReportsAndAnalysis;
+    WordLayout = 'src\Layout\RentalCar.docx';
+    RDLCLayout = 'src\Layout\RentalCar.rdlc';
 
     dataset
     {

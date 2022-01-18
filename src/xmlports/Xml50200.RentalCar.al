@@ -1,14 +1,25 @@
 xmlport 50200 "Rental Car"
 {
     Caption = 'Rental Car';
+    FormatEvaluate = Xml;
+    Encoding = UTF8;
+    Direction = Import;
+
     schema
     {
         textelement(RootNodeName)
         {
             tableelement(Item; Item)
             {
+                fieldelement(Number; Item."No.")
+                {
+                }
                 fieldelement(Name; Item.Name)
                 {
+                    trigger OnAfterAssignField()
+                    begin
+                        Item.Description := Item.Name;
+                    end;
                 }
                 fieldelement(Model; Item.Model)
                 {
@@ -22,9 +33,18 @@ xmlport 50200 "Rental Car"
                 fieldelement(Manufacture; Item.Manufacture)
                 {
                 }
+                fieldelement(Price; Item."Unit Price")
+                {
+                }
                 fieldelement(Discount; Item.Discount)
                 {
                 }
+                trigger OnBeforeInsertRecord()
+                var
+                    myInt: Integer;
+                begin
+                    item."Base Unit of Measure" := 'PCS';
+                end;
             }
         }
     }

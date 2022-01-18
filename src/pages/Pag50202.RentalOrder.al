@@ -85,6 +85,7 @@ page 50202 "Rental Order"
                 UpdatePropagation = Both;
             }
         }
+
     }
     actions
     {
@@ -104,4 +105,5 @@ page 50202 "Rental Order"
             }
         }
     }
+
 }
