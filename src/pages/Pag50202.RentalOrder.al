@@ -2,12 +2,13 @@ page 50202 "Rental Order"
 {
 
     Caption = 'Rental Order';
-    PageType = Card;
+    PageType = Document;
     SourceTable = "Rental Sales Header";
+
 
     layout
     {
-        area(content)
+        area(Content)
         {
             group(General)
             {
@@ -85,6 +86,23 @@ page 50202 "Rental Order"
                 UpdatePropagation = Both;
             }
         }
+        area(FactBoxes)
+        {
+            part(ItemPicture; "Item Picture")
+            {
+                ApplicationArea = All;
+                Caption = 'Picture';
+                Provider = SalesLines;
+                SubPageLink = "No." = FIELD("Item No.");
+            }
+            part(CarFactBox; "Car Detais FactBox")
+            {
+                ApplicationArea = All;
+                Provider = SalesLines;
+                SubPageLink = "No." = FIELD("Item No.");
+            }
+
+        }
 
     }
     actions
@@ -105,5 +123,6 @@ page 50202 "Rental Order"
             }
         }
     }
+
 
 }
