@@ -34,6 +34,11 @@ tableextension 50200 "Rental Car" extends Item
             Caption = 'Discount';
             DataClassification = CustomerContent;
         }
+        field(50208; "Rental Car"; Boolean)
+        {
+            Caption = 'Rental Car';
+            DataClassification = CustomerContent;
+        }
     }
 
 }

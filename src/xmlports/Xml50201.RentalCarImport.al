@@ -1,9 +1,9 @@
-xmlport 50200 "Rental Car"
+xmlport 50201 "Rental Car Import"
 {
     Caption = 'Rental Car';
     FormatEvaluate = Xml;
     Encoding = UTF8;
-    Direction = Export;
+    Direction = Import;
 
     schema
     {

@@ -5,14 +5,23 @@ pageextension 50204 "Rental Cars List" extends "Item List"
         addlast(Functions)
         {
 
-            action(ExportImportRentalCar)
+            action(ExportRentalCar)
             {
-                Caption = 'Export Import Rental Car';
+                Caption = 'Export Rental Car';
                 ApplicationArea = All;
                 RunObject = xmlport "Rental Car";
                 Promoted = true;
                 PromotedCategory = Process;
-                Image = ImportExport;
+                Image = Export;
+            }
+            action(ImportRentalCar)
+            {
+                Caption = 'Import Rental Car';
+                ApplicationArea = All;
+                RunObject = xmlport "Rental Car Import";
+                Promoted = true;
+                PromotedCategory = Process;
+                Image = Import;
             }
         }
     }

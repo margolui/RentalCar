@@ -101,7 +101,12 @@ page 50202 "Rental Order"
                 Provider = SalesLines;
                 SubPageLink = "No." = FIELD("Item No.");
             }
-
+            part(CarAvaliable; "Car Avaliable")
+            {
+                ApplicationArea = All;
+                Provider = SalesLines;
+                SubPageLink = "No." = FIELD("Item No.");
+            }
         }
 
     }
