@@ -50,6 +50,7 @@ page 50209 "Car List"
                 }
             }
         }
+
     }
     trigger OnOpenPage()
     var

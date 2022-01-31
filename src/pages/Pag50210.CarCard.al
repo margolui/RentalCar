@@ -3,7 +3,7 @@ page 50210 "Car Card"
     Caption = 'Car Card';
     PageType = Card;
     SourceTable = Item;
-    
+
     layout
     {
         area(content)
@@ -45,6 +45,25 @@ page 50210 "Car Card"
                     ToolTip = 'Specifies the value of the Manufacture field.';
                     ApplicationArea = All;
                 }
+            }
+        }
+        area(FactBoxes)
+        {
+            part(ItemPicture; "Item Picture")
+            {
+                ApplicationArea = All;
+                Caption = 'Picture';
+                SubPageLink = "No." = FIELD("No.");
+            }
+            part(CarFactBox; "Car Detais FactBox")
+            {
+                ApplicationArea = All;
+                SubPageLink = "No." = FIELD("No.");
+            }
+            part(CarAvaliable; "Car Avaliable")
+            {
+                ApplicationArea = All;
+                SubPageLink = "No." = FIELD("No.");
             }
         }
     }
