@@ -1,0 +1,23 @@
+.vscode
+.alpackages
+.alcache
+.altemplates
+*.app
+# Temp files
+.vs/
+.vscode/
+
+# Others
+~$*
+*~
+
+# Extensions permission set - auto generated
+extensionsPermissionSet.xml
+.DS_Store
+temp.txt
+
+# Translation  - auto generated
+.xlf
+Translations/
+Translations
+Translations/*.xlf
