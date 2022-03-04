@@ -33,22 +33,5 @@ report 50202 "Available Cars"
             }
         }
     }
-    requestpage
-    {
-        layout
-        {
-            area(content)
-            {
-                group(GroupName)
-                {
-                }
-            }
-        }
-        actions
-        {
-            area(processing)
-            {
-            }
-        }
-    }
+
 }

@@ -36,24 +36,7 @@ report 50200 "Customer Profit"
             end;
         }
     }
-    requestpage
-    {
-        layout
-        {
-            area(content)
-            {
-                group(GroupName)
-                {
-                }
-            }
-        }
-        actions
-        {
-            area(processing)
-            {
-            }
-        }
-    }
+
     var
         Total: Decimal;
 }
