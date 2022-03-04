@@ -10,9 +10,19 @@ page 50210 "Car Card"
         {
             group(General)
             {
+                field("No."; Rec."No.")
+                {
+                    ToolTip = 'Specifies the number of the item.';
+                    ApplicationArea = All;
+                }
                 field(Name; Rec.Name)
                 {
                     ToolTip = 'Specifies the value of the Name field.';
+                    ApplicationArea = All;
+                }
+                field(Description; Rec.Description)
+                {
+                    ToolTip = 'Specifies the value of the Description field.';
                     ApplicationArea = All;
                 }
                 field(Color; Rec.Color)
@@ -20,11 +30,7 @@ page 50210 "Car Card"
                     ToolTip = 'Specifies the value of the Color field.';
                     ApplicationArea = All;
                 }
-                field("No."; Rec."No.")
-                {
-                    ToolTip = 'Specifies the number of the item.';
-                    ApplicationArea = All;
-                }
+
                 field(Discount; Rec.Discount)
                 {
                     ToolTip = 'Specifies the value of the Discount field.';
@@ -45,6 +51,7 @@ page 50210 "Car Card"
                     ToolTip = 'Specifies the value of the Manufacture field.';
                     ApplicationArea = All;
                 }
+
             }
         }
         area(FactBoxes)

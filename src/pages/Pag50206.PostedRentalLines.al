@@ -42,6 +42,14 @@ page 50206 "Posted Rental Lines"
                     ToolTip = 'Specifies the value of the Discount field.';
                     ApplicationArea = All;
                 }
+                field("From Date"; Rec."From Date")
+                {
+                    Caption = 'From Date';
+                }
+                field("To Date"; Rec."To Date")
+                {
+                    Caption = 'To Date';
+                }
             }
         }
     }

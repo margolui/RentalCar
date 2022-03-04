@@ -47,6 +47,16 @@ table 50204 "Posted Rental Line"
             Caption = 'Discount';
             DataClassification = ToBeClassified;
         }
+        field(9; "From Date"; Date)
+        {
+            Caption = 'From Date';
+            DataClassification = ToBeClassified;
+        }
+        field(10; "To Date"; Date)
+        {
+            Caption = 'To Date';
+            DataClassification = ToBeClassified;
+        }
     }
     keys
     {

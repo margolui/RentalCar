@@ -73,6 +73,23 @@ table 50202 "Rental Sales Line"
             Editable = false;
             DataClassification = ToBeClassified;
         }
+        field(9; "From Date"; Date)
+        {
+            Caption = 'From Date';
+            DataClassification = ToBeClassified;
+        }
+        field(10; "To Date"; Date)
+        {
+            Caption = 'To Date';
+            DataClassification = ToBeClassified;
+        }
+        field(11; "Color"; Text[250])
+        {
+            CalcFormula = Lookup(Item."Color" WHERE("No." = FIELD("Item No.")));
+            Caption = 'Color';
+            Editable = false;
+            FieldClass = FlowField;
+        }
     }
     keys
     {
@@ -101,4 +118,5 @@ table 50202 "Rental Sales Line"
             "Total Price" := Price * Quantity * (100 - Discount) / 100;
         end;
     end;
+
 }

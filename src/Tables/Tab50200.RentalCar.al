@@ -40,5 +40,12 @@ tableextension 50200 "Rental Car" extends Item
             DataClassification = CustomerContent;
         }
     }
+    procedure CountUsages(): Integer
+    var
+        PostedRentalLine: Record "Posted Rental Line";
+    begin
+        PostedRentalLine.SetRange("Item No.", "No.");
+        exit(PostedRentalLine.Count());
+    end;
 
 }

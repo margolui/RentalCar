@@ -42,6 +42,20 @@ page 50203 "Rental Sales Lines"
                     ToolTip = 'Specifies the value of the Discount field.';
                     ApplicationArea = All;
                 }
+                field("From Date"; Rec."From Date")
+                {
+                    Caption = 'From Date';
+                }
+                field("To Date"; Rec."To Date")
+                {
+                    Caption = 'To Date';
+                }
+                field("Color"; Rec.Color)
+                {
+                    Caption = 'Color';
+                    ApplicationArea = All;
+                }
+
             }
         }
     }
